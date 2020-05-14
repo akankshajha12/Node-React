@@ -21,8 +21,8 @@ mongoose.connect('mongodb+srv://Akanksha12:Akanksha12@cluster0-kirnc.gcp.mongodb
 const exerciseRouter = require ('./routes/exercises')
 const usersRouter = require('./routes/users')   
 
-app.use('./exercises', exerciseRouter)
-app.use('./users', usersRouter)
+app.use('/exercises', exerciseRouter)
+app.use('/users', usersRouter)
 
 
 app.listen(port , () => { console.log ('Server is running at : ',port);
